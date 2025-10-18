@@ -29,7 +29,7 @@ do
             echo "Testing Audio Recorder..."
             echo "This will record for 3 seconds and show audio device info."
             echo ""
-            python audio_recorder.py
+            python src/audio_recorder.py
             ;;
         "GUI Indicator")
             echo ""
@@ -37,7 +37,7 @@ do
             echo "Check your system tray. The indicator will cycle through states."
             echo "Press Ctrl+C to exit."
             echo ""
-            python gui_indicator.py
+            python src/gui_indicator.py
             ;;
         "Hotkey Handler")
             echo ""
@@ -45,7 +45,7 @@ do
             echo "Press Ctrl+Shift+R to test hotkey detection."
             echo "Press Ctrl+C to exit."
             echo ""
-            python hotkey_handler.py
+            python src/hotkey_handler.py
             ;;
         "Full Application")
             echo ""
@@ -54,7 +54,7 @@ do
             echo "Make sure you have set your OpenAI API key in .env file."
             echo "Press Ctrl+C to exit."
             echo ""
-            python transcribe_app.py
+            python main.py
             ;;
         "Quit")
             echo "Exiting..."

@@ -46,7 +46,7 @@ class Config:
 
     def load_env_file(self):
         """Load .env file if it exists."""
-        env_path = Path(__file__).parent / '.env'
+        env_path = Path(__file__).parent.parent / '.env'
         if env_path.exists():
             with open(env_path, 'r') as f:
                 for line in f:
