@@ -1,0 +1,7 @@
+# PyGObject is installed via system packages, not pip
+websockets>=12.0
+openai>=1.0.0
+pyaudio>=0.2.13
+pyperclip>=1.8.2
+pynput>=1.7.6
+python-xlib>=0.33

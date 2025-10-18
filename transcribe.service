@@ -1,0 +1,15 @@
+[Unit]
+Description=Voice Transcription Service
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/dev/transcribe/venv/bin/python %h/dev/transcribe/transcribe_app.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical-session.target
